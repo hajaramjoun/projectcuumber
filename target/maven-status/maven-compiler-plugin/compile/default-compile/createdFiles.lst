@@ -1,0 +1,8 @@
+pages\SearchResultPage.class
+steps\MyStepdefs.class
+pages\ProductPage.class
+pages\CartPage.class
+pages\HomePage.class
+steps\MyStepdefsUs1.class
+runner\runner.class
+pages\MyAccountPage.class

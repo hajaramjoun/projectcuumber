@@ -1,0 +1,214 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "L\u0027utilisateur ne doit pas pouvoir créer de compte avec un mot de passe sans au moins un caractère spécial",
+        "description": "",
+        "id": "l-utilisateur-ne-doit-pas-pouvoir-créer-de-compte-avec-un-mot-de-passe-sans-au-moins-un-caractère-spécial;l-utilisateur-ne-doit-pas-pouvoir-créer-de-compte-avec-un-mot-de-passe-sans-au-moins-un-caractère-spécial",
+        "after": [
+          {
+            "result": {
+              "duration": 58600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyStepdefsUs1.salim(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 36200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyStepdefsUs2.salim(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5013623900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "site web",
+            "match": {
+              "location": "MyStepdefsUs1.siteWeb()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1716120200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click MyAccount",
+            "match": {
+              "location": "MyStepdefsUs1.clickMyAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1898037800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Remplire le mail et le mot de passe et  regitrer et Le mot de passe doit être composé à minima de 7 caractères et contenir à minima une majuscule, une minuscule, un chiffre et un caractère spécial",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 98
+                }
+              ],
+              "location": "MyStepdefsUs1.remplireLeMailEtLeMotDePasseEtRegitrerEtLeMotDePasseDoitÊtreComposéÀMinimaDeCaractèresEtContenirÀMinimaUneMajusculeUneMinusculeUnChiffreEtUnCaractèreSpécial(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71774300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "le compte est bien créer",
+            "match": {
+              "location": "MyStepdefsUs1.leCompteEstBienCréer()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreationCompte"
+          },
+          {
+            "name": "@TEST_POEI22GR3-20"
+          },
+          {
+            "name": "@Automation_Testing_GR3"
+          }
+        ]
+      }
+    ],
+    "name": "L\u0027utilisateur ne doit pas pouvoir créer de compte avec un mot de passe sans au moins un caractère spécial",
+    "description": "",
+    "id": "l-utilisateur-ne-doit-pas-pouvoir-créer-de-compte-avec-un-mot-de-passe-sans-au-moins-un-caractère-spécial",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/1_POEI22-746.feature",
+    "tags": [
+      {
+        "name": "@CreationCompte",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Lors de la connexion à son compte, l\u0027écran \u0027Dashboard\" doit s\u0027afficher",
+        "description": "",
+        "id": "authentification;lors-de-la-connexion-à-son-compte--l-écran--dashboard\"-doit-s-afficher",
+        "after": [
+          {
+            "result": {
+              "duration": 24400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyStepdefsUs1.salim(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 5100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyStepdefsUs2.salim(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4873319000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Dans l\u0027espace My Account",
+            "match": {
+              "location": "MyStepdefsUs2.dansLEspaceMyAccount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1454577400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "un pavé Login permet de saisir son login et son mot de passe et de valider avec un bouton",
+            "match": {
+              "location": "MyStepdefsUs2.unPavéLoginPermetDeSaisirSonLoginEtSonMotDePasseEtDeValiderAvecUnBouton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 209460900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "le  Dashboard  doit s\u0027afficher et des liens (Orders,Download,Adresses,Account Details,Logout)",
+            "match": {
+              "location": "MyStepdefsUs2.leDashboardDoitSAfficherEtDesLiensOrdersDownloadAdressesAccountDetailsLogout()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@REQ_POEI22GR3-2"
+          },
+          {
+            "name": "@TEST_POEI22GR3-23"
+          },
+          {
+            "name": "@Automation_Testing_GR3"
+          }
+        ]
+      }
+    ],
+    "name": "Authentification",
+    "description": "",
+    "id": "authentification",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Authentification.feature",
+    "tags": [
+      {
+        "name": "@REQ_POEI22GR3-2",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
