@@ -1,8 +1,6 @@
 package steps;
 
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -11,8 +9,9 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.HomePage;
 import pages.MyAccountPage;
+import pages.SetTeardown;
 
-public class MyStepdefsUs1 {
+public class MyStepdefsUs1  {
     WebDriver driver;
     String email;
     HomePage homePage;
@@ -27,6 +26,7 @@ public class MyStepdefsUs1 {
         driver.get("https://practice.automationtesting.in/");
         driver.manage().window().maximize();
     }
+
 
 
     @When("click MyAccount")
@@ -54,19 +54,17 @@ public class MyStepdefsUs1 {
 
     @Then("le compte est bien créer")
     public void leCompteEstBienCréer() {
-
         String helloWord = myAccountPage.verifierCreationDeCompte();
         helloWord.contains("Hello" + email);
+        driver.quit();
     }
 
 
-    @After
-    public void salim(Scenario s) {
-//        driver.quit();
-//        if (s.isFailed()) {
-//            final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-//            s.embed(screenshot, "image/png");
-//        }
+    @And("logout")
+    public void logout() {
+        driver.findElement(By.linkText("Logout")).click();
+        driver.quit();
     }
+
 
 }

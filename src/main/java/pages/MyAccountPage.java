@@ -109,4 +109,8 @@ public class MyAccountPage {
         return list;
 
     }
+    public MyAccountPage clickLougout(){
+        driver.findElement(By.linkText("Logout")).click();
+        return this;
+    }
 }

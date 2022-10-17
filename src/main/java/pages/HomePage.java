@@ -35,6 +35,10 @@ public class HomePage<HomePage> {
         return new MyAccountPage(driver);
 
     }
+    public  Shop clickShop(){
+        driver.findElement(By.linkText("Shop")).click();
+        return new Shop(driver);
+    }
 
 
 

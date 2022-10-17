@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/1_POEI22-746.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/CreationsCompte.feature");
 formatter.feature({
   "name": "L\u0027utilisateur ne doit pas pouvoir créer de compte avec un mot de passe sans au moins un caractère spécial",
   "description": "",
@@ -63,75 +63,17 @@ formatter.match({
   "location": "MyStepdefsUs1.leCompteEstBienCréer()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.uri("file:src/test/resources/features/Authentification.feature");
-formatter.feature({
-  "name": "Authentification",
-  "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@REQ_POEI22GR3-2"
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Lors de la connexion à son compte, l\u0027écran \u0027Dashboard\" doit s\u0027afficher",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@REQ_POEI22GR3-2"
-    },
-    {
-      "name": "@TEST_POEI22GR3-23"
-    },
-    {
-      "name": "@Automation_Testing_GR3"
-    }
-  ]
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: strong (tried for 20 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.4.0\u0027, revision: \u0027e5c75ed026a\u0027\nSystem info: host: \u0027DESKTOP-6IM55F2\u0027, ip: \u0027192.168.121.113\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.4.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\\Users\\IB\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:54037}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54037/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a9716ab8472fd816a585fa699377e3b3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\r\n\tat pages.MyAccountPage.verifierCreationDeCompte(MyAccountPage.java:82)\r\n\tat steps.MyStepdefsUs1.leCompteEstBienCréer(MyStepdefsUs1.java:57)\r\n\tat ✽.le compte est bien créer(file:src/test/resources/features/CreationsCompte.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "Dans l\u0027espace My Account",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "MyStepdefsUs2.dansLEspaceMyAccount()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "un pavé Login permet de saisir son login et son mot de passe et de valider avec un bouton",
+  "name": "logout",
   "keyword": "And "
 });
 formatter.match({
-  "location": "MyStepdefsUs2.unPavéLoginPermetDeSaisirSonLoginEtSonMotDePasseEtDeValiderAvecUnBouton()"
+  "location": "MyStepdefsUs1.logout()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "le  Dashboard  doit s\u0027afficher et des liens (Orders,Download,Adresses,Account Details,Logout)",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "MyStepdefsUs2.leDashboardDoitSAfficherEtDesLiensOrdersDownloadAdressesAccountDetailsLogout()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
+  "status": "skipped"
 });
 });

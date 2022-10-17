@@ -7,32 +7,12 @@
         "name": "L\u0027utilisateur ne doit pas pouvoir créer de compte avec un mot de passe sans au moins un caractère spécial",
         "description": "",
         "id": "l-utilisateur-ne-doit-pas-pouvoir-créer-de-compte-avec-un-mot-de-passe-sans-au-moins-un-caractère-spécial;l-utilisateur-ne-doit-pas-pouvoir-créer-de-compte-avec-un-mot-de-passe-sans-au-moins-un-caractère-spécial",
-        "after": [
-          {
-            "result": {
-              "duration": 58600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "MyStepdefsUs1.salim(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 36200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "MyStepdefsUs2.salim(Scenario)"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5013623900,
+              "duration": 4126468000,
               "status": "passed"
             },
             "line": 6,
@@ -44,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 1716120200,
+              "duration": 1238026500,
               "status": "passed"
             },
             "line": 7,
@@ -56,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 1898037800,
+              "duration": 217962300,
               "status": "passed"
             },
             "line": 8,
@@ -74,8 +54,9 @@
           },
           {
             "result": {
-              "duration": 71774300,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: strong (tried for 20 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.4.0\u0027, revision: \u0027e5c75ed026a\u0027\nSystem info: host: \u0027DESKTOP-6IM55F2\u0027, ip: \u0027192.168.121.113\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.4.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\\Users\\IB\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:54037}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54037/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a9716ab8472fd816a585fa699377e3b3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\r\n\tat pages.MyAccountPage.verifierCreationDeCompte(MyAccountPage.java:82)\r\n\tat steps.MyStepdefsUs1.leCompteEstBienCréer(MyStepdefsUs1.java:57)\r\n\tat ✽.le compte est bien créer(file:src/test/resources/features/CreationsCompte.feature:9)\r\n",
+              "duration": 20362692900,
+              "status": "failed"
             },
             "line": 9,
             "name": "le compte est bien créer",
@@ -83,6 +64,18 @@
               "location": "MyStepdefsUs1.leCompteEstBienCréer()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 21000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "logout",
+            "match": {
+              "location": "MyStepdefsUs1.logout()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -102,107 +95,10 @@
     "description": "",
     "id": "l-utilisateur-ne-doit-pas-pouvoir-créer-de-compte-avec-un-mot-de-passe-sans-au-moins-un-caractère-spécial",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/1_POEI22-746.feature",
+    "uri": "file:src/test/resources/features/CreationsCompte.feature",
     "tags": [
       {
         "name": "@CreationCompte",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "line": 5,
-        "name": "Lors de la connexion à son compte, l\u0027écran \u0027Dashboard\" doit s\u0027afficher",
-        "description": "",
-        "id": "authentification;lors-de-la-connexion-à-son-compte--l-écran--dashboard\"-doit-s-afficher",
-        "after": [
-          {
-            "result": {
-              "duration": 24400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "MyStepdefsUs1.salim(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 5100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "MyStepdefsUs2.salim(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 4873319000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Dans l\u0027espace My Account",
-            "match": {
-              "location": "MyStepdefsUs2.dansLEspaceMyAccount()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1454577400,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "un pavé Login permet de saisir son login et son mot de passe et de valider avec un bouton",
-            "match": {
-              "location": "MyStepdefsUs2.unPavéLoginPermetDeSaisirSonLoginEtSonMotDePasseEtDeValiderAvecUnBouton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 209460900,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "le  Dashboard  doit s\u0027afficher et des liens (Orders,Download,Adresses,Account Details,Logout)",
-            "match": {
-              "location": "MyStepdefsUs2.leDashboardDoitSAfficherEtDesLiensOrdersDownloadAdressesAccountDetailsLogout()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@REQ_POEI22GR3-2"
-          },
-          {
-            "name": "@TEST_POEI22GR3-23"
-          },
-          {
-            "name": "@Automation_Testing_GR3"
-          }
-        ]
-      }
-    ],
-    "name": "Authentification",
-    "description": "",
-    "id": "authentification",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Authentification.feature",
-    "tags": [
-      {
-        "name": "@REQ_POEI22GR3-2",
         "type": "Tag",
         "location": {
           "line": 1,
